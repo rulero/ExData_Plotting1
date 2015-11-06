@@ -46,7 +46,9 @@ Sys.setlocale("LC_ALL", "English")
 
 # Open png device, create file with default 480 x 480 px size
 # Use a transparent background as the provided figures
-png("plot4.png", bg = "transparent")
+# (Forums: Antialiasing improves the quality (type="cairo" for Windows, "quartz"
+# for mac) (doesn't matter for grading, added to remember the parameter)
+png("plot4.png", bg = "transparent", type="cairo")
 
 # Plot the data
 par.previous <- par(mfrow = c(2,2))
