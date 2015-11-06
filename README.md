@@ -112,3 +112,41 @@ The four plots that you will need to construct are shown below.
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
 
+
+
+## The Course Project files
+
+The script files have been created using the requerid names `plot1.R`,
+`plot2.R`, etc., if the input data file `household_power_consumption.txt` is
+not already present in the current working directory then when the script is
+executed it will automatically download the Data Set zip from the URL mentioned
+above, and then it will unzip the downloaded file to generate the
+`household_power_consumption.txt` file.  If all the scripts are executed in the
+same folder then the input file will be downloaded only once.
+
+The scripts load the data from `household_power_consumption.txt` into a
+`data.table` variable named `power.data,` it is processed to keep only the
+dates 2007-02-01 and 2007-02-02 and add a new column named `Date_time` of type
+POSIXct (date and time), it is created from the existing columns `Date` and
+`Time` using the input format day/month/year hour:minute:second.
+
+The variable `power.data` will remain in the global environment and data won't
+be loaded again if it already exists, if all the scripts are sourced into the
+same session then the input file will be loaded and processed only once
+(provided a conflicting variable with the same name didn't already exist before
+sourcing any of these plot scripts).
+
+To execute the scripts just open a new R session, change the working directory
+to the folder that contains these scripts and source them, the output png files
+will be created immediately, there is no need to manually call an additional
+function to trigger the execution:
+
+```
+source("plot1.R")
+source("plot2.R")
+source("plot3.R")
+source("plot4.R")
+```
+
+The resulting png images, `plot1.png`, `plot2.png`, etc, will be created in the
+current directory.
