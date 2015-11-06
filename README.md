@@ -152,23 +152,11 @@ The png device is used to plot the graphics, and the files `plot1.png`,
 `plot2.png`, etc, will be created in the current directory.
 
 
-### My Plot 1
+### Plots
 
+Click the thumbnails to see the whole image
 
-![plot of plot1.png](plot1.png) 
-
-
-### My Plot 2
-
-![plot of plot2.png](plot2.png) 
-
-
-### My Plot 3
-
-![plot of plot3.png](plot3.png) 
-
-
-### My Plot 4
-
-![plot of plot4.png](plot4.png) 
-
+[<img src="plot1.png" width="180" heigth="180">](plot1.png)
+[<img src="plot2.png" width="180" heigth="180">](plot2.png)
+[<img src="plot3.png" width="180" heigth="180">](plot3.png)
+[<img src="plot4.png" width="180" heigth="180">](plot4.png)
