@@ -49,7 +49,7 @@ Sys.setlocale("LC_ALL", "English")
 png("plot4.png", bg = "transparent")
 
 # Plot the data
-par(mfrow = c(2,2))
+par.previous <- par(mfrow = c(2,2))
 with(power.data, {
     # First plot Row 1 Col 1
     plot(Date_time, Global_active_power, type="l"
@@ -77,3 +77,6 @@ dev.off()
 
 ## restore locale
 Sys.setlocale("LC_ALL", my_locale)
+
+## restore par
+par(par.previous)
