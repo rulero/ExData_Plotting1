@@ -118,16 +118,16 @@ The four plots that you will need to construct are shown below.
 
 The script files have been created using the requerid names `plot1.R`,
 `plot2.R`, etc., if the input data file `household_power_consumption.txt` is
-not already present in the current working directory then when the script is
-executed it will automatically download the Data Set zip from the URL mentioned
-above, and then it will unzip the downloaded file to generate the
+not already present in the current working directory then when any of these
+scripts is executed it will automatically download the Data Set zip from the
+URL mentioned above, and then it will unzip the downloaded file to generate the
 `household_power_consumption.txt` file.  If all the scripts are executed in the
-same folder then the input file will be downloaded only once.
+same folder then the input file will be downloaded and unziped only once.
 
 The scripts load the data from `household_power_consumption.txt` into a
 `data.table` variable named `power.data,` it is processed to keep only the
 dates 2007-02-01 and 2007-02-02 and add a new column named `Date_time` of type
-POSIXct (date and time), it is created from the existing columns `Date` and
+`POSIXct` (date and time), it is created from the existing columns `Date` and
 `Time` using the input format day/month/year hour:minute:second.
 
 The variable `power.data` will remain in the global environment and data won't
@@ -148,5 +148,27 @@ source("plot3.R")
 source("plot4.R")
 ```
 
-The resulting png images, `plot1.png`, `plot2.png`, etc, will be created in the
-current directory.
+The png device is used to plot the graphics, and the files `plot1.png`,
+`plot2.png`, etc, will be created in the current directory.
+
+
+### My Plot 1
+
+
+![plot of plot1.png](plot1.png) 
+
+
+### My Plot 2
+
+![plot of plot2.png](plot2.png) 
+
+
+### My Plot 3
+
+![plot of plot3.png](plot3.png) 
+
+
+### My Plot 4
+
+![plot of plot4.png](plot4.png) 
+
