@@ -152,9 +152,9 @@ The png device is used to plot the graphics, and the files `plot1.png`,
 `plot2.png`, etc, will be created in the current directory.
 
 
-### Plots
+### Project Plots
 
-Click the thumbnails to see the whole image
+Click the thumbnails to see the whole image of the plots created with the projects' `plot?.R` scripts.
 
 [<img src="plot1.png" width="180" heigth="180">](plot1.png)
 [<img src="plot2.png" width="180" heigth="180">](plot2.png)
